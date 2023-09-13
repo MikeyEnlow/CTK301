@@ -1,0 +1,51 @@
+.header {
+    color: yellow;
+    background-color: blue;
+}
+
+/* CSS */
+a {
+  color: #ff0000;
+}
+
+a:link {
+  color:#ff0000;
+}
+
+a:visited {
+  color:#00FF00;
+}
+
+a:active {
+  color: #00ffff;
+}
+
+a:hover {
+  color: #ffff00;
+}    
+
+#makepurple {
+    color:rgb(255, 0, 217)
+}
+
+.makeblue {
+    color: #00f;
+    background-color: red;
+}
+
+b {
+    color: purple
+}
+
+.header3 {
+    color: purple;
+    background-color: #00FF00;
+}
+
+li {
+    color: brown;
+}
+
+p {
+    color: rgb(0, 136, 91);
+}
