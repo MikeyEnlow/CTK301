@@ -1,0 +1,87 @@
+body {
+    background-color: lightgray;
+    background-image: url(a5bg.png);
+  }
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 5px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+nav ul {
+    list-style-type: none; /* none, disc, circle, square */
+    margin:0;
+    padding: 0;     
+}
+
+nav li {
+    margin: 5px;
+    width: 150px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-image: linear-gradient(to top, #0500e0, #0601bc, #06019a, #060179, #050159);
+  }
+
+  nav li a:hover {
+    background-image: linear-gradient(to top, #0600ff, #004eff, #0071ff, #008eff, #00a7ff);
+  }
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: solid 3px black;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    margin-bottom: 10px;
+}
+
+main {
+    text-align: justify;
+    margin: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    background-color: white;
+
+}
+
+main a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:visted {
+    color: blue;
+}
+
+main a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    border: 3px solid white;
+    background-image: linear-gradient(to top, #0500e0, #0601bc, #06019a, #060179, #050159);
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    margin-top: 30px;
+
+}
