@@ -1,0 +1,116 @@
+body {
+    background-color: lightgray;
+    background-image: url(a62.png);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    color: white;
+    background-image: linear-gradient(to top, #000000, #181818, #292929, #3a3a3a, #4d4d4d);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 5px;
+    width: 210px;
+    margin-top: 15px;
+  }
+
+  nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    background-image: linear-gradient(to bottom, #ff0000, #ea0000, #d60000, #c20000, #af0000);
+  }
+
+  nav li a:hover {
+    background-image: linear-gradient(to top, #b90000, #a00004, #860006, #6e0004, #560000);
+  }
+
+#wrapper {
+    margin: 1em auto;
+    padding-right: 0px;
+    width: 960px;
+    border: 3px solid black;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-rows: 100px auto 75px;
+}
+
+#fontchange {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    grid-column: span 12;
+  }
+  
+  nav {
+    grid-column: span 3;
+    margin-left: 10px;
+    padding-right: 10px;
+  }
+  
+  main {
+    grid-column: span 9;
+    padding-right: 15px;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    border-bottom: solid 3px black;
+    margin-top: 10px;
+  }
+
+  .theimg {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: solid black 3px;
+  }
+
+  #bold{
+    font-weight: bold;
+    text-align: justify;
+    font-size: 110%;
+  }
+
+  main a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  main a:hover {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+footer {
+    grid-column: span 12;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-style: italic;
+    border-top: 3px solid black;
+    background-image: linear-gradient(to bottom, #ff0000, #ea0000, #d60000, #c20000, #af0000);
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 90%;
+  }
