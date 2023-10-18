@@ -1,0 +1,142 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #00ccff;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: linear-gradient(to bottom, #108df4, #1b75d2, #1c5fb0, #174990, #103571);
+}
+
+h1 a {
+  color:#00ccff;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: white;
+}
+
+nav li {
+    width: 251.85px;
+    display: inline-block;
+    border: solid #103571 5px;
+    margin-right: -10px;
+    font-size: 20px;
+    margin-left: -15px;
+    border-right: 0;
+  }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.stuffff {
+    font-size: 0;
+}
+
+  nav li a {
+    color: #00ccff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    padding-left: 20px;
+    background-image: linear-gradient(to bottom, #108df4, #1b75d2, #1c5fb0, #174990, #103571);
+  }
+
+  nav li a:hover {
+    color: white;
+  }
+
+#wrapper {
+    margin: 1em auto;
+    padding-right: 0px;
+    width: 960px;
+    border: 5px solid #103571;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    grid-column: span 12;
+  }
+
+  nav {
+    grid-column: span 12;
+    margin-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+  }
+
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    border-bottom: solid 3px #103571;
+    margin-top: 10px;
+    padding-top: 0px;
+    font-weight: normal;
+    color: #103571;
+  }
+
+  main {
+    grid-column: span 8;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-top: 15px;
+  }
+
+  .therock {
+    float: right;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 325px;
+    border: solid 3px #103571;
+  }
+
+  #bold{
+    font-weight: bold;
+    text-align: justify;
+    font-size: 110%;
+  }
+
+  main a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  main a:hover {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  #sidebox {
+    background-color: #a3d9e6;
+    grid-column: span 4;
+    padding: 30px;
+    font-weight: bold;
+  }
+
+footer {
+    grid-column: span 12;
+    border-top: 5px solid #103571;
+    background-color: rgb(220, 0, 0);
+    padding: 10px;
+  }
