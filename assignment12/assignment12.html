@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 12 Javascript</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assignment12.css">
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+  <img class="alsoimg" src="logo-search-grid-1x.png" alt="logo"/>
+  <h1>MICHAEL'S PORFOLIO</h1>
+  </header>
+
+  <div id="fontchange">
+    <nav>
+  <ul>
+    <li><a href="#">Settings</a></li>
+    <li><a href="#">Feedback</a></li>
+    <li><a href="#">Notifications</a></li>
+    <p><span class="gray">Copyright</span></p>
+  </ul>
+  </nav>
+</div>
+
+<main>
+  <div class="topnav">
+    <input type="text" placeholder="Search..">
+  </div>
+  <article>
+  <a href="https://illinoisstate.edu/" target="_blank"><img class= "theimg" src="at sign.jpg" alt="@" /></a>
+  
+  <a href="https://illinoisstate.edu/" target="_blank"><img class= "theimg" src="camera.jpg" alt="camera" /></a>
+  
+  <a href="https://illinoisstate.edu/" target="_blank"><img class= "theimg" src="headphones.jpg" alt="headphone"/><audio controls autobuffer autoplay><source class= "themusic" src="sonic.mp3" type="audio/mpeg"></audio></a>
+  <div id="movie">
+  <video width="300" autoplay controls loop preload="auto" ><source src="Perry.mp4" type="video/mp4"></video>
+  </div>
+</article>
+
+<div class="f-carousel" id="myCarousel">
+  <div class="f-carousel__slide"><img src="IMG_4040.jpg"></div>
+  <div class="f-carousel__slide"><img src="IMG_4044.jpg"></div>
+  <div class="f-carousel__slide"><img src="IMG_4045.jpg"></div>
+  <div class="f-carousel__slide"><img src="IMG_4051.jpg"></div>
+  <div class="f-carousel__slide"><img src="IMG_4053.jpg"></div>
+</div>
+
+  </main>
+
+<footer>
+  <a href="https://illinoisstate.edu/" target="blank">Illinois State University</a>
+  </footer>
+</div>
+
+
+<script>
+const container = document.getElementById("myCarousel");
+const options = { infinite: true };
+
+new Carousel(container, options);
+
+</script>
+</body>
+</html>
