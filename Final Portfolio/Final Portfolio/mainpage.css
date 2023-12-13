@@ -1,47 +1,183 @@
 body {
-    width: 1200px;
-    margin: 1em auto;
-  }
-  
-  main {
-    border: 3px solid grey;
-    background-color: black;
-    position: relative;
-  }
-  #video {
-    width: 50%;
-    clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);
-  }
-  
-  #video img { width: 100%; }
-  
-  #audio {
-    width: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 50%);
-  }
-  
-  #audio img { width: 100%; }
-  
-  #at {
-    position: absolute;  
-    top: 50%;
+  background-color: rgb(115, 115, 115);
+}
+
+h1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: normal;
+  text-shadow: 3px 3px 0 rgb(255, 0, 93), -3px -3px 0 rgb(0, 255, 238);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: rgb(0, 0, 0);
+  background-color: rgb(21, 0, 112);
+  font-size: 80px;
+  text-align: center;
+  border: 5px solid rgb(188, 188, 188);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #484848;
+  padding-left: 120px;
+  padding-bottom: 8px;
+  border: 5px solid rgb(188, 188, 188);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.topnav img {
+  float: left;
+  width: 75px;
+  border-radius: 25px;
+  margin-left: -110px;
+  margin-bottom: -32px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(122, 122, 122);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav input[type=text] {
+  float: left;
+  padding: 6px;
+  padding-right: 825px;
+  border:  2px solid #989898;
+  margin-right: 30px;
+  font-size: 17px;
+  border-radius: 25px;
+  background-color: #484848;
+  color: rgb(213, 213, 213);
+  margin-top: -20px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
     width: 100%;
-    clip-path: polygon(50% 0%, 100% 25%, 0% 25%);  
+    margin: 0;
+    padding: 14px;
   }
-  
-  #at img { width: 100%; }
-  
-  #circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1000;
-    width: 200px;
-    height: 200px;
-    margin-left: -100px;
-    margin-top: -100px;
-    clip-path: circle(100px);
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
   }
+}
+
+body {
+  width: 1200px;
+  margin: 1em auto;
+}
+
+main {
+  background-color: rgb(201, 201, 201);
+  position: relative;
+}
+#videoborder {
+  width: 50%;
+  clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);
+}
+
+#videocontent {
+  width: 49.5%;
+    clip-path: polygon(1.5% 1.5%, 100% 1.5%, 100% 49%, 1.5% 98%);
+}
+
+#video img { width: 100%; }
+
+#audioborder {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 50%);
+}
+
+#audiocontent {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(.5% 1.5%, 98% 1.5%, 98% 94%, .5% 48.5%);
+}
+
+
+#audio img { width: 100%; }
+
+#atborder {
+  position: absolute;  
+  top: 48%;
+  width: 100%;
+  clip-path: polygon(50% 0%, 100% 25%, 0% 25%);
+}
+#atcontent {
+  position: absolute;  
+  top: 48%;
+  width: 100%;
+  clip-path: polygon(49.5% 3.5%, 97.5% 65.5%, 3% 65.5%);
+}
+
+#at img { width: 100%; }
+
+#circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  width: 200px;
+  height: 200px;
+  margin-left: -110px;
+  margin-top: -110px;
+  border: 10px solid rgb(200, 200, 200);
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+#circle img {
+  width: 130%;
+  margin-top: -40px;
+  margin-left: -27px;
+}
+
+footer {
+  grid-column: span 12;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  border: 5px solid lightgrey;
+  border-top: 0;
+
+  background-color:rgb(56, 56, 56);
+  font-size: 200%;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+footer a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer a :hover{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer a :visited{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
