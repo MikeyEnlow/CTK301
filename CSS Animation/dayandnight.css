@@ -1,0 +1,143 @@
+body {
+  margin: 310px;
+  background: linear-gradient(to bottom, #1eefff, #6df3fc, #97f8fb, #b9fcfb, #d6fffd);
+  animation: back-ani 15s linear infinite;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to top, #401d5d, #3c133f, #2f0e26, #1e0914, #000000);
+  opacity: 0;
+  animation: fade-ani 15s linear infinite;
+  z-index: -1;
+}
+
+@keyframes fade-ani {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+    font-family: 'Impact', 'Comic Sans MS', Consolas, monospace;
+    src: url('Manrope-light.ttf');
+    font-weight: normal;
+    text-shadow: 2px 2px 0 rgb(220, 128, 0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0;
+    color: rgb(255, 238, 0);
+    background-color: rgb(0, 187, 255);
+    font-size: 70px;
+    text-align: center;
+    animation: back-ani 15s linear infinite;
+}
+
+@keyframes back-ani {
+0%   {background-color: rgb(0, 187, 255);}
+50%  {background-color:#5b0056;}
+100% {background-color: rgb(0, 187, 255);}
+0%   {color: rgb(255, 238, 0);}
+50%  {color:#fffbbc;}
+100% {color: rgb(255, 238, 0);}
+0%   {text-shadow: 2px 2px 0 rgb(220, 128, 0);}
+50%  {text-shadow: 2px 2px 0 rgb(0, 0, 0);}
+100% {text-shadow: 2px 2px 0 rgb(220, 128, 0);}
+}
+
+#fontchange {
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column: span 3;
+}
+
+header {
+    grid-column: span 12;
+  }
+
+  .circle1 {
+    position: absolute;
+    bottom: 150px;
+    left: -1000px;
+    width: 200px;
+    height: 200px;
+    border-radius:200px;
+    background-color: rgb(255, 251, 0);
+    animation: circle1-ani 15s linear infinite;
+    animation-delay: -3s;
+  }
+  
+  @keyframes circle1-ani {
+    0%   {left: -500px; bottom: 150px;}
+    10%  {bottom: 225px;}
+    20%  {bottom: 250px;}
+    30%  {bottom: 250px;}
+    40%  {bottom: 225px;}
+    50%  {left: 1200px; bottom: 150px;}
+    100% {left: 1200px;}
+  }
+
+  .moon {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 173);
+    position: absolute;
+    bottom: 150px;
+    left: 0px;
+    border-radius: 50%;
+    clip-path: polygon(
+      5% 50%, 10% 30%, 25% 15%, 50% 7%, 75% 15%, 50% 25%, 40% 50%, 
+      50% 70%, 75% 85%, 50% 93%, 25% 85%, 10% 70%
+    );
+    animation: moon-ani 15s linear infinite;
+    animation-delay: -10s;
+  }
+
+  @keyframes moon-ani {
+    0%   {left: -500px; bottom: 150px;}
+    10%  {bottom: 225px;}
+    20%  {bottom: 250px;}
+    30%  {bottom: 250px;}
+    40%  {bottom: 225px;}
+    50%  {left: 1200px; bottom: 150px;}
+    100% {left: 1200px;}
+  }
+  
+  .stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .stars::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 
+    200px -330px white, 250px -250px white, 350px -380px white, 400px -200px white,
+    100px -320px white, 600px -240px white, 700px -350px white, 800px -260px white,
+    900px -380px white, 1000px -220px white, 1100px -360px white, 200px -290px white,
+    300px -310px white, 1400px -250px white, 500px -380px white, 300px -240px white,
+    250px -390px white, 350px -250px white, 250px -300px white, 100px -240px white;
+    opacity: 0;
+    animation: fade-stars 15s linear infinite;
+  }
+  
+  @keyframes fade-stars {
+    0%   { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  
