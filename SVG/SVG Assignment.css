@@ -1,0 +1,21 @@
+#Layer_9, #Layer_10 {
+  position: absolute;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+
+svg:hover #Layer_9,
+svg:hover #Layer_10 {
+  animation: spin 0.3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
