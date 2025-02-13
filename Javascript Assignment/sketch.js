@@ -50,7 +50,7 @@ function preload() {
 function setup() {
   createCanvas(600, 600);
   player = new Player();
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 50; i++) {
     stars.push(new Star());
   }
   bouldergeist = new Bouldergeist(width / 2, height / 4);
@@ -61,6 +61,7 @@ function setup() {
 }
 
 function draw() {
+  clear();
   image(backgroundVideo, 0, 0, width, height);
   drawStars();
 
