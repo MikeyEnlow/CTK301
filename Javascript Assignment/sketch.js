@@ -23,8 +23,6 @@ let appearsSound;
 let starChanceSound;
 let fadingAura = 0; // For fading aura effect
 let bouldergeistPhase = 1;
-let cnv = createCanvas(960, 540);
-cnv.id('canvas2');
 
 function preload() {
   playerImage = loadImage("mario spin.webp");
