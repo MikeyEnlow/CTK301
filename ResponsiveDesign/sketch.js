@@ -11,7 +11,6 @@ let shootDelay = 1000; // 1.5-second delay
 let playerShootSounds = [];
 let gameOverSound, winSound, startJingle, gameplaySound;
 let customFont;
-let backgroundVideo;
 let health = 3;
 let bouldergeist;
 let star;
@@ -42,9 +41,6 @@ function preload() {
   starChanceSound = loadSound("StarChance.mp3");
 
   customFont = loadFont("mario.ttf");
-  backgroundVideo = createVideo("Mario.mp4");
-  backgroundVideo.loop();
-  backgroundVideo.hide();
 }
 
 function setup() {
@@ -62,7 +58,6 @@ function setup() {
 
 function draw() {
   clear();
-  image(backgroundVideo, 0, 0, width, height);
   drawStars();
 
   if (gameState === "start") {
