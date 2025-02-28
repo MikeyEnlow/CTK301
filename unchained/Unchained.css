@@ -1,0 +1,173 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.theimg { 
+  display: block;
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  margin: 0px auto 0; 
+}
+
+.overlay {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: none;
+  margin-top: 675px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color:transparent;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    text-shadow: none;
+    font-size: 3rem;
+    background: none;
+    max-width: 100%;
+    margin-bottom: 20px;
+
+  }
+
+  #link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: white;
+    text-shadow: none;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #link :visited{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: white;
+    text-shadow: none;
+  }
+
+  footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color:black;
+    margin-top: -55px;
+    padding-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    font-size: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  footer div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: white;
+    text-shadow: none;
+    padding-top: 200px;
+  }
+
+  footer div  :visited {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-decoration: none;
+  }
+
+  #stuff {
+    display: flex;
+    align-items: center;  
+    font-size: 300%;
+    padding-left: 60px;
+    padding-top: 50px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#stuff p {
+    margin: 0;
+    padding-right: 40px; 
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    padding-top: -120px;
+}
+
+#links a {
+    margin-right: 15px; 
+}
+
+.facebook {
+  color:white;
+  width: 50px;
+  padding-left: 15px;
+}
+
+.instagram {
+  color: white;
+  width: 80px;
+}
+
+.tiktok {
+  color:white;
+  width: 50px;
+}
+
+.youtube {
+  color:white;
+  width: 50px;
+  padding-left: 15px;
+}
+
+.unchained {
+  color:white;
+  width: 50px;
+  padding-left: 200px;
+}
+
+@media (max-width: 768px) {
+  #text {
+    max-width: 90%;
+    font-size: 40%;
+  }
+  h1 {
+    font-size: 300%;
+  }
+  .facebook, .instagram, .tiktok, .youtube, .unchained {
+    width: 100px; 
+    padding-left: 10px;
+  }
+}
