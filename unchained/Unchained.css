@@ -12,13 +12,15 @@
   margin: 0px auto 0; 
 }
 
+
 .overlay {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%; 
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,25 +28,53 @@
   text-align: center;
   color: white;
   background: none;
-  margin-top: 675px;
+  z-index: 1;
+  height: auto;
+  margin-top: 625px;
+  box-sizing: border-box;
+  font-size: 1 rem;
 }
 
-body {
-  padding: 0;
-  margin: 0;
+.overlay-container {
+  position: relative;
   width: 100%;
+  height: 100vh;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content { 
+  flex: 1;
 }
 
 #text {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     background-color:transparent;
     text-align: center;
-    max-width: 100%;
+    width: 90%;
     box-sizing: border-box;
+    padding: 50px;
+    font-size: 1 rem;
+    padding: 25px;
+    height: 100%;
+  }
+
+  .text-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
     padding: 20px;
-    font-size: 1rem;
+    box-sizing: border-box;
   }
 
   h1 {
@@ -56,7 +86,8 @@ body {
     font-size: 3rem;
     background: none;
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
 
   }
 
@@ -68,7 +99,7 @@ body {
     max-width: 100%;
     box-sizing: border-box;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
   #link :visited{
@@ -81,22 +112,38 @@ body {
   footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
-    background-color:black;
-    margin-top: -55px;
-    padding-top: 30px;
-    padding-top: 50px;
-    padding-bottom: 70px;
-    font-size: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
+    background-color: black;
+    padding: 20px 0;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 20px;
+}
 
   footer div {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: lighter;
-    color: white;
+    color: white; 
+    text-decoration: none; 
     text-shadow: none;
-    padding-top: 200px;
+    padding-bottom: 0;
   }
 
   footer div  :visited {
@@ -105,29 +152,48 @@ body {
     text-decoration: none;
   }
 
+  footer a {
+    color: white;
+    text-decoration: none;
+    pointer-events: auto;
+  }
+  footer a:visited {
+    color: white;
+  }
+
   #stuff {
     display: flex;
-    align-items: center;  
-    font-size: 300%;
-    padding-left: 60px;
-    padding-top: 50px;
-    max-width: 100%;
-    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 #stuff p {
-    margin: 0;
-    padding-right: 40px; 
+  font-size: 2rem;
+  margin: 0;
+  padding: 30px;
+}
+
+.need {
+  font-size: 2rem;
+  white-space: nowrap;
+  padding-left: 20px;
 }
 
 #links {
-    display: flex;
-    align-items: center;
-    padding-top: -120px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 0;
 }
 
 #links a {
-    margin-right: 15px; 
+  display: inline-block;
+}
+
+#links img {
+  height: auto;
 }
 
 .facebook {
@@ -150,12 +216,12 @@ body {
   color:white;
   width: 50px;
   padding-left: 15px;
+  padding-right: 30px;
 }
 
 .unchained {
   color:white;
   width: 50px;
-  padding-left: 200px;
 }
 
 @media (max-width: 768px) {
@@ -167,7 +233,35 @@ body {
     font-size: 300%;
   }
   .facebook, .instagram, .tiktok, .youtube, .unchained {
-    width: 100px; 
+    width: 100%; 
     padding-left: 10px;
   }
+
+  #stuff {
+    gap: 10px;
+}
+
+footer {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#links {
+    margin-top: 10px;
+}
+
+.overlay {
+  width: 90%;
+  font-size: 16px;
+}
+
+#links img {
+    width: 40px;
+}
 }
