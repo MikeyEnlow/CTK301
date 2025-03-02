@@ -174,7 +174,7 @@ html, body {
 .need {
   font-size: 2rem;
   white-space: nowrap;
-  padding-left: 20px;
+  padding-top: 200px;
 }
 
 #links {
@@ -200,12 +200,13 @@ html, body {
 
 .instagram {
   color: white;
-  width: 80px;
+  width: 84px;
+  margin-top: -3px;
 }
 
 .tiktok {
   color:white;
-  width: 50px;
+  width: 55px;
 }
 
 .youtube {
@@ -217,7 +218,7 @@ html, body {
 
 .unchained {
   color:white;
-  width: 50px;
+  width: 55px;
 }
 
 @media (max-width: 760px) {
@@ -282,11 +283,16 @@ footer {
 #content {
   padding-bottom: 700px;
 }
+
 }
 
 @media (max-width: 1024px){
   #content {
     min-height: calc(100vh - 100px);
+  }
+
+  .need {
+    padding-top: 700px;
   }
 }
 
@@ -297,5 +303,15 @@ footer {
 
   footer {
     padding: 15px 0;
+  }
+
+  .need {
+    padding-top: 700px;
+  }
+}
+
+@media (max-width: 1200px){
+  .need {
+    padding-top: 600px;
   }
 }
