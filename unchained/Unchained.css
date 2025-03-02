@@ -30,9 +30,9 @@
   background: none;
   z-index: 1;
   height: auto;
-  margin-top: 625px;
+  margin-top: 525px;
   box-sizing: border-box;
-  font-size: 1 rem;
+  font-size: 1.1rem;
 }
 
 .overlay-container {
@@ -41,19 +41,25 @@
   height: 100vh;
 }
 
+.overlay p{
+  margin-bottom: -1px;
+}
+
 html, body {
+  background-color: black;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
-#content { 
+#content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #text {
@@ -63,9 +69,9 @@ html, body {
     text-align: center;
     width: 90%;
     box-sizing: border-box;
-    padding: 50px;
-    font-size: 1 rem;
     padding: 25px;
+    padding-top: 0;
+    font-size: 1.1rem;
     height: 100%;
   }
 
@@ -83,17 +89,17 @@ html, body {
     text-align: center;
     color: white;
     text-shadow: none;
-    font-size: 3rem;
+    font-size: 4vw;
     background: none;
     max-width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: -1px;
     margin-top: 10px;
 
   }
 
   #link {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: lighter;
+    font-size: 1.1rem;
     color: white;
     text-shadow: none;
     max-width: 100%;
@@ -102,7 +108,7 @@ html, body {
     margin-top: 25px;
   }
 
-  #link :visited{
+  #link a:visited{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: lighter;
     color: white;
@@ -110,31 +116,23 @@ html, body {
   }
 
   footer {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
     background-color: black;
-    padding: 20px 0;
-    font-size: 1rem;
+    color: white;
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    display: flex;
     justify-content: center;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    z-index: 2;
-    position: relative;
-    bottom: 0;
-}
+    flex-wrap: wrap;
+  }
 
 .footer-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding-left: 20px;
 }
 
   footer div {
@@ -152,14 +150,12 @@ html, body {
     text-decoration: none;
   }
 
-  footer a {
+  footer a,
+  footer a:visited {
     color: white;
     text-decoration: none;
     pointer-events: auto;
-  }
-  footer a:visited {
-    color: white;
-  }
+}
 
   #stuff {
     display: flex;
@@ -193,12 +189,12 @@ html, body {
 }
 
 #links img {
-  height: auto;
+  object-fit: contain;
 }
 
 .facebook {
   color:white;
-  width: 50px;
+  width: 70px;
   padding-left: 15px;
 }
 
@@ -214,7 +210,7 @@ html, body {
 
 .youtube {
   color:white;
-  width: 50px;
+  width: 100px;
   padding-left: 15px;
   padding-right: 30px;
 }
@@ -224,16 +220,38 @@ html, body {
   width: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   #text {
     max-width: 90%;
-    font-size: 40%;
+    font-size: 16px;
   }
+
   h1 {
     font-size: 300%;
   }
-  .facebook, .instagram, .tiktok, .youtube, .unchained {
-    width: 100%; 
+
+  .facebook {
+    width: 70px;
+    padding-left: 10px;
+  }
+
+  .instagram {
+    width: 100px;
+    padding-left: 10px;
+  }
+
+  .tiktok {
+    width: 70px;
+    padding-left: 10px;
+  }
+
+  .youtube {
+    width: 100px;
+    padding-left: 10px;
+  }
+
+  .unchained {
+    width: 70px;
     padding-left: 10px;
   }
 
@@ -261,7 +279,23 @@ footer {
   font-size: 16px;
 }
 
-#links img {
-    width: 40px;
+#content {
+  padding-bottom: 700px;
 }
+}
+
+@media (max-width: 1024px){
+  #content {
+    min-height: calc(100vh - 100px);
+  }
+}
+
+@media (max-width: 600px) {
+  #content {
+    min-height: calc(100vh - 60px);
+  }
+
+  footer {
+    padding: 15px 0;
+  }
 }
