@@ -35,10 +35,11 @@ main {
   text-align: center;
 }
 
-p {
-  color: transparent;
-  padding: 0;
-  margin: 0;
+main p {
+  color: white;
+  background-color: rgb(16, 20, 55);
+  margin: -50px;
+  font-size: 0;
 }
 
 #leftImage,
