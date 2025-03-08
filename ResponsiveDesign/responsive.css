@@ -22,7 +22,9 @@ body {
 
 h1 {
   color: white;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
   font-family: 'Impact', 'Comic Sans MS', Consolas, monospace;
   text-align: center;
   font-size: 5vw;
